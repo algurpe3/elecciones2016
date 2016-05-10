@@ -15,6 +15,7 @@ import os
 
 # In order to remove the SECRET_KEY,  
 from django.core.exceptions import ImproperlyConfigured
+from django.utils.translation import ugettext_lazy as _
 
 def get_env_variable(var_name):
     try:
@@ -67,8 +68,8 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.security.SecurityMiddleware',
 )
 
-from django.utils.translation import ugettext_lazy as _
-
+# i18n
+# import ugettext_lazy as _
 LANGUAGES = (
     ('en', _('English')),
     ('es', _('Spanish')),
@@ -79,6 +80,7 @@ LANGUAGE_CODE = 'en-us'
 LOCALE_PATHS = (
     os.path.join(BASE_DIR, 'locale'),
 )
+# i18n
 
 ROOT_URLCONF = 'elecciones.urls'
 
