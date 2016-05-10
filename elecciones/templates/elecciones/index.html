@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load i18n %}
+{% load l10n %}
 
 {% block head_title %}Elecciones 2016{% endblock %}
 
@@ -18,6 +19,7 @@
 
 	<div class="container">
 		<!-- Example row of columns -->
+			
 		<div class="row">
 			<div class="col-md-4">
 				<h2>Spanish General Elections 2016</h2>
@@ -25,14 +27,14 @@
 				<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
 			</div>
 			<div class="col-md-4">
-				<h2>Results</h2>
-				<p>Results</p>
-				<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+			      <h2 id="local-date">{{today}}</h2>
+			      <p>This is the time using your local information </p>
+			      <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
 			</div>
 			<div class="col-md-4">
-				<h2>Congress Assignment Details</h2>
-				<p>Congress Assignment Details</p>
-				<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+			      <h2 id="non-local-date">{{today|unlocalize}}</h2>
+			      <p>This is the default time format.</p>
+			      <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
 			</div>
 		</div>
 
