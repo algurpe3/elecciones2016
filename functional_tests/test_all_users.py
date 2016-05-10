@@ -34,3 +34,10 @@ class HomeNewVisitorTest(StaticLiveServerTestCase):
         self.browser.get(self.live_server_url + "/humans.txt")
         self.assertNotIn("Not Found", self.browser.title)
 
+    def test_internationalization(self):
+        for lang, h1_text in [('en', 'Welcome to Spanish Elections 2016!'), ('es', 'Bienvenido a Elecciones Generales 2016!')]:
+            activate(lang)
+            self.browser.get(self.get_full_url("home"))
+            h1 = self.browser.find_element_by_tag_name("h1")
+            self.assertEqual(h1.text, h1_text)
+

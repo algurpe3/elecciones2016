@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-10 22:48+0000\n"
+"POT-Creation-Date: 2016-05-10 23:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,18 +20,20 @@ msgstr ""
 
 #: elecciones/settings/base.py:74
 msgid "English"
-msgstr ""
+msgstr "Inglés"
 
 #: elecciones/settings/base.py:75
 msgid "Spanish"
-msgstr ""
+msgstr "Español"
 
 #: elecciones/templates/elecciones/index.html:11
-msgid "Welcome to Spanish Elections!"
-msgstr ""
+msgid "Welcome to Spanish Elections 2016!"
+msgstr "Bienvenido a Elecciones Generales 2016!"
 
 #: elecciones/templates/elecciones/index.html:12
 msgid ""
-" Spanish General Elections 2016. </br> Results. </br></br> Congress "
-"Assignment Details "
+" Spanish General Elections 2016. </br> Total Results. </br></br> Congressist "
+"Assignment Details. "
 msgstr ""
+" Elecciones Generales Españolas 2016. </br> Resultados totales. </br> Diputados "
+" Asignación de Escaños detallada. "
