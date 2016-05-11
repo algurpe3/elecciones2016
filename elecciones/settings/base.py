@@ -44,6 +44,8 @@ SECRET_KEY = 'd6e(bs-ho4tyqshkt*3cosncho79(sb$e*l$0j3ol!g*w5otcq'
 
 ALLOWED_HOSTS = []
 
+HOST ='localhost:5432'
+
 
 # Application definition
 
@@ -53,6 +55,7 @@ INSTALLED_APPS = (
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'django.contrib.sites',
     'django.contrib.staticfiles',
 )
 
